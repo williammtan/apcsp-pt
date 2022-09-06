@@ -1,0 +1,101 @@
+<!-- Author: William Tan -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+    <script src="https://kit.fontawesome.com/4efbb314ee.js" crossorigin="anonymous"></script> <!-- fontawesome-->
+
+    <!-- import bootstrap, copied from: https://getbootstrap.com/docs/4.0/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- end copied -->
+
+    <title>WT - About Me</title>
+</head>
+<body>
+    <!-- MAIN -->
+    <main>
+        <div class="container">
+            <!-- HEADER -->
+            <header class="d-flex justify-content-center">
+                <h1 id="sub-header">About me</h1>
+            </header>
+
+            <!-- NAVBAR -->
+            <nav class="row">
+                <div class="col-sm-4 landing-navbar">
+                    <h5><a href="index.html">home</a></h5>
+                </div>
+                <div class="col-sm-4 landing-navbar">
+                    <h5><a href="projects.html">project</a></h5>
+                </div>
+                <div class="col-sm-4 landing-navbar">
+                    <h5><a href="experience.html">experience</a></h5>
+                </div>
+            </nav>
+            
+            <div class="row">
+                <div class="col-md-6 am-header">
+                    <h4>Basic info</h5>
+                    <p>I was born on the 27th of April 2007. I am currently enrolled in JIS (Jakarta Intercultural School) and will graduate high school in 2025. I started off my programming journey with basic python. Now, I am learning c++ and competitive programming (CP). </p>
+                </div>
+                <div class="col-md-6 am-header">
+                    <h4>Motivation</h5>
+                    <p>I know what it feels like to be intimidated by programming, but after learning the basics, it is not as hard as it seems! So give it a try! Take a look at this <a href="codehs/simple_website.html">simple website</a>!</p>
+                </div>
+            </div>
+
+            <h1 class="sub-header">My inspiration</h1>
+            <!-- Bootstrap inspirational carousel, documentation: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+            <div id="inspiration-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#inspiration-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#inspiration-carousel" data-slide-to="1"></li>
+                    <li data-target="#inspiration-carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/william_lin.png" alt="First slide">
+                    <div class="carousel-caption dark d-none d-md-block">
+                        <h5><a href=https://www.youtube.com/watch?v=uGrBHohIgQY">Winning Google Kickstart round A</a></h5>
+                        <p>William Lin, the <strong>GOAT</strong></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 carousel-img" src="https://mmc.tirto.id/image/otf/1024x535/2017/11/24/linus-torvalds--tedcom.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Linus Torvalds</h5>
+                        <p>"<em>****</em> you nvidia!"</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 carousel-img" src="https://media.suara.com/pictures/653x366/2022/08/17/12329-elon-musk.jpg" alt="Second slide">
+                    <div class="carousel-caption dark d-none d-md-block">
+                        <h5>Elon Musk</h5>
+                        <p>Can't ignore the big Musk</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#inspiration-carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#inspiration-carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h6 id="footer-heading">This website was created entirely from scratch using HTML, CSS, Bootstrap, and Vanilla Javascript <a href="https://github.com/williammtan/apcsp-pt/">(source)</a></h6>
+    </footer>
+</body>
